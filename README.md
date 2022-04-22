@@ -12,12 +12,44 @@ Workflow:
 
 ![Architecture Overview](docs/architecture_overview.JPG "Architecture Overview")
 
+# Options
+
+![Options Overview](docs/Options.JPG "Options Overview")
 
 # Setup
 
-This setup will deploy the core infrastructure needed to run the the solution:
-
 - Core Infratructure
+- Logic App
+
+## Core infrastructure
+
+Configure the variables.
+
+```bash
+# Global
+export RG_NAME=logic_demo
+export RG_REGION=westus
+export STORAGE_ACCOUNT_NAME=logic_demo
+
+# Logic App variables
+export LOGIC_APP_NAME=LogAnalyticsEmail
+```
+
+### Resource Group
+
+Create a resource group for this project
+
+```bash
+az group create --name $RG_NAME --location $RG_REGION
+```
+
+### Resource Group
+
+Create a resource group for this project
+
+```bash
+az group create --name $RG_NAME --location $RG_REGION
+```
 
 
 # References
