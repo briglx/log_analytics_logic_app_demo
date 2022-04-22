@@ -43,12 +43,16 @@ Create a resource group for this project
 az group create --name $RG_NAME --location $RG_REGION
 ```
 
-### Resource Group
+### Logic App
 
-Create a resource group for this project
+Make a copy of `logic_app\definition-example.json` and rename to `logic_app\definition.json`. Edit the file with the necessary values.
 
 ```bash
-az group create --name $RG_NAME --location $RG_REGION
+# Deploy the logic app
+az logic workflow create --definition /path_to_project/logic_app/definition.json
+--location $RG_REGION
+--name $LOGIC_APP_NAME
+--resource-group $RG_NAME
 ```
 
 
