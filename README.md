@@ -27,12 +27,12 @@ Configure the variables.
 
 ```bash
 # Global
-export RG_NAME=logic_demo
+export RG_NAME=avd_email_demo
 export RG_REGION=westus
-export STORAGE_ACCOUNT_NAME=logic_demo
+export STORAGE_ACCOUNT_NAME=avd_email_demo_sa
 
 # Logic App variables
-export LOGIC_APP_NAME=LogAnalyticsEmail
+export LOGIC_APP_NAME=VirtualDesktopClientEmail
 ```
 
 ### Resource Group
